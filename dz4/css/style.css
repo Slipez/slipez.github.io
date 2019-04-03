@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 2% auto;
+    max-width: 860px;
+    min-width: 320px;
+    /*height: 860px;*/
+    /*border: 1px solid red;*/
+
+}
+.name-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.name-top-item1 {
+    color: grey;
+    flex-grow: 1;
+    /*font-weight: bold;*/
+    font-size: 3vw;
+    /*border: 1px solid green;*/
+}
+.name-top-item2 {
+    flex-grow: 15;
+}
+.name-top-item3 {
+    text-align: right;
+    color: grey;
+
+    flex-grow: 1;
+    /*font-weight: bold;*/
+    font-size: 3vw;
+    /*border: 1px solid green;*/
+}
+.name-top-item4 {
+    text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 3vw;
+    /*border: 1px solid green;*/
+}
+.main {
+    border: 2px solid grey;
+    padding: 0 3%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    /*text-align: center;*/
+}
+.name {
+    /*border-bottom: 3px solid #2e65ff;*/
+    text-align: center;
+    /*margin: 20px;*/
+    color: #2e65ff;
+    text-decoration: underline;
+    line-height: 11vw;
+    font-size: 6vw;
+    text-shadow: 1px 1px 2px black, 0 0 1vw red;
+    /*border: 1px solid red;*/
+}
+.all-image-detaly {
+    position: relative;
+    display: flex;
+    width: auto;
+    /*border: 1px solid red;*/
+}
+.all-image {
+    /*margin: 2%;*/
+    width: 50%;
+    /*border: 1px solid red;*/
+}
+.image_w_h-1 {
+    /*width: 294px;*/
+    /*height: 390px;*/
+    /*max-width: 320px;*/
+    /*height: 75%;*/
+    /*border: 1px solid yellow;*/
+    /*width: 380px;*/
+    /*height:250px;*/
+}
+.image_w_h-1 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.image-1-4 {
+    display: flex;
+    justify-content: space-around ;
+}
+.image_w_h-1-4 {
+    /*overflow:hidden;*/
+    /*display: block;*/
+    /*max-width: 70%;*/
+    /*max-height: 10%;*/
+    /*width: 30%;*/
+    /*height: 30%;*/
+    /*margin: 10px ;*/
+    /*border: 1px solid green;*/
+}
+.image_w_h-1-4 img {
+    /*max-width: 70%;*/
+    /*max-height: 70%;*/
+    width: 95%;
+    height: auto;
+    /*object-fit: contain;*/
+    transition: all 0.5s ease-out; /**/
+}
+.image_w_h-1-4 img:hover{
+    transform: scale(2) translate(25%,-25%);
+
+}
+.detaly {
+    padding: 3%;
+    width: 50%;
+}
+.detaly-item-1 {
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+    border-bottom: 2px solid grey;
+    /*border: 1px solid black;*/
+}
+.detaly-item-2 {
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+.akciya {
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+    background: rgba(255, 0, 0, 0.5);
+    /*opacity: .5;*/
+    color: #ffffff;
+    font-size: 3.8vw;
+    width: 13vw;  /*140px*/
+    height: 13vw;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    /*transition: all 1s;*/
+    transition: all 0s;
+}
+.akciya:hover {
+    transform: scale(1.1) ;
+}
+.opisanie {
+    font-weight: bold;
+    font-size: 2.4vw;
+    margin: 2% 0;
+    border-bottom: 2px solid grey;
+
+}
+.opisanie-item {
+    font-size: 2vw;
+    margin: 1% 0 2% 0;
+    /*border: 1px solid red;*/
+}
+li {
+    list-style: none;
+}
+
+.comment {
+    font-size: 1.6vw;
+}
+
+/**//**//**/
+/*.flexBox {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+    /*border: 2px solid red;*/
+    /*margin: 50px auto;*/
+/*}*/
+
+/*.flexBox-item {*/
+    /*margin: 10px;*/
+    /*background: grey;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid green;*/
+/*}*/
+
+/*.positionBox {*/
+    /*position: relative;*/
+    /*width: 1000px;*/
+    /*height: 500px;*/
+    /*border: 2px solid blue;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*.positionBox-item {*/
+    /*color: magenta;*/
+    /*margin: 10px;*/
+    /*background: grey;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 2px solid magenta;*/
+    /*font-family: Arial, sans-serif;*/
+    /*font-size: 20px;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.posRelative {*/
+    /*position: relative;*/
+    /*background: #e3ff36;*/
+    /*top: 50px;*/
+    /*left: 150px;*/
+    /*z-index: 1;*/
+/*}*/
+
+/*.posFixed {*/
+    /*position: fixed;*/
+    /*background: #ff2632;*/
+    /*top: 50px;*/
+    /*right: 50px;*/
+/*}*/
+
+/*.posAbsolute {*/
+    /*position: absolute;*/
+    /*background: #7eff68;*/
+    /*top: 100px;*/
+    /*left: 100px;*/
+/*}*/
+
+
+
+
+
+
