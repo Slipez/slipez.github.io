@@ -18,11 +18,10 @@ body {
 }
 .name {
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     font-family: Arial, sans-serif;
-    color: #2e65ff;
-    text-decoration: underline;
-    font-size: 60px;
+    
+    font-size: 20px;
 }
 
 
