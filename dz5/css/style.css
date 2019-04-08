@@ -34,41 +34,42 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logo {
+.header__logo {
     /*border: 1px solid red;*/
     margin-top: 10px;
 }
-.navigation {
+.header__navigation {
     /*border: 1px solid blue;*/
     font-family: Arial, sans-serif;
     margin-top: 5px;
 }
-.navigation li {
+.header__navigation li {
     display: inline;
     margin: 0 5px;
     /*border: 1px solid red;*/
 }
-.navigation a {
+.header__navigation a {
     text-decoration: none;
     /*text-transform: uppercase;*/
     color: white;
     font-size: 13px;
 }
-.main {
+.header__navigation a:hover {
+    color: #00e0d0;
+}
+.header__main {
     margin: auto auto;
     /*width: 80%;*/
     /*border: 1px solid black;*/
     align-content: center;
     height: auto;
 }
-
 .content {
     text-align: center;
 }
 .mainTitle {
     margin-top: 150px;
     font-size: 40px;
-
     /*text-align: center;*/
 }
 .separator {
@@ -80,26 +81,35 @@ body {
     margin: 20px;
 }
 .button {
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    margin: 10px auto;
+    display: block;
+    margin: 50px auto 0 auto;
     width: 140px;
-    /*display: block;*/
-    padding: 10px;
+    padding: 10px 0;
     border: 2px solid #00e0d0;
-    color: #00e0d0;
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: center;
-}
-.button a {
     text-decoration: none;
-    /*text-transform: uppercase;*/
-    color:#00e0d0;
+    color: #00e0d0;
     font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+}
+/*.button a {*/
+    /*text-decoration: none;*/
+    /*color:#00e0d0;*/
+    /*font-size: 18px;*/
+    /*font-weight: bold;*/
+    /*list-style: none;*/
+/*}*/
+.button:hover {
+    color:#fff;
+    background-color: #00e0d0;
+    border: 2px solid white;
 }
 .dotNav {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 .dotNav__full {
     width: 15px;
@@ -116,9 +126,7 @@ body {
     border-radius: 50%;
     margin: 2px;
 }
-.background {
-    /*background-image: url("../img/img1.jpg");*/
-}
+
 
 
 
