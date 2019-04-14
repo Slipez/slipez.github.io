@@ -88,11 +88,12 @@ ul,li {
 .innerContent {
     margin: 0 70px;
     font-size: 14px;
-    color: white;
     font-family: Roboto, serif;
 }
+.innerContent_white {
+    color: white;
+}
 .mainButton {
-    /*display: block;*/
     margin: 50px auto 0 auto;
     width: 120px;
     padding: 10px 0;
@@ -120,10 +121,10 @@ ul,li {
 .sliderDotted__item {
     width: 12px;
     height: 12px;
-    /*background: #00E0D0;*/
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 0 2px;
+    /*background: #00E0D0;*/
 }
 .sliderDotted__item-active {
     width: 12px;
@@ -138,20 +139,13 @@ ul,li {
 .siteSectionAbout {
     /*height: 405px;*/
 }
-.containerAbout {
-    /*display: flex;*/
-    /*color: black;*/
-    /*border: 1px solid green;*/
-}
+.containerAbout {}
 .mainHeaderAbout {
     display: flex;
     align-items: start;
-    /*justify-content: normal;*/
     /*border: 1px dashed red;*/
 }
 .mainAboutLeft {
-    /*display: flex;*/
-    /*padding: 0 90px 0 70px;*/
     max-width: 400px;
     min-width: 235px;
     margin: 0 auto;
@@ -159,7 +153,6 @@ ul,li {
 .mainAboutRight {
     margin: 0 10px;
     max-width: 560px;
-    /*justify-content: left;*/
     /*border: 1px solid red;*/
 }
 .titleAbout {
@@ -171,12 +164,12 @@ ul,li {
     font-weight: bold;
     /*border: 1px solid red;*/
 }
-.innerContent_color {
+.innerContent_black {
     color: black;
     margin: 0;
     /*border: 1px solid #7a4dff;*/
 }
-.innerContent_color p { /*?*/
+.innerContent_black p { /*?*/
     margin-bottom: 35px;
     font-size: 14px;
 }
@@ -275,7 +268,7 @@ ul,li {
         margin: 10px auto 15px auto;
     }
     .innerContent {
-        margin: 0 5px;
+        margin: 0 10px;
     }
     .mainButton {
         margin-top: 20px;
@@ -292,7 +285,7 @@ ul,li {
     }
 }
 
-/*классы с текстами навести порядок*/
+/*классы с текстами навести порядок+*/
 /*left 400, right 560 =960 42% 58%*/
 /*width=700 media*/
 /******************************/
