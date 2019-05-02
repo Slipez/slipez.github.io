@@ -29,8 +29,7 @@ ul, li {
   /*height: 100%;*/
   height: auto;
   padding: 70px 10px;
-  margin: 0 auto;
-  border: 1px solid yellow; }
+  margin: 0 auto; }
 
 .container-header {
   padding-top: 15px; }
@@ -307,8 +306,11 @@ ul, li {
     padding-bottom: 30px; }
 
 .worksTop {
+  max-width: 960px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 70px 10px; }
   .worksTop .title {
     margin-bottom: 0; }
   .worksTop .innerContent {
@@ -321,22 +323,17 @@ ul, li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; }
+  width: auto; }
   .worksBottom .photoWorks {
-    position: absolute;
-    top: 70px;
-    left: -321px;
     display: flex;
     flex-wrap: wrap;
-    width: 1602px; }
+    justify-content: center; }
     .worksBottom .photoWorks .photoWork {
-      max-width: 267px;
-      max-height: 200px; }
-      .worksBottom .photoWorks .photoWork .workImg {
-        width: 100%;
-        height: auto; }
+      max-width: 16vw;
+      height: auto;
+      min-width: 220px; }
   .worksBottom .button {
-    margin-top: 540px;
+    margin: 70px 10px;
     justify-content: center; }
 
 .buttonTeam {
@@ -436,7 +433,6 @@ ul, li {
 
 .footerLeft {
   /*width: 33%;*/
-  max-width: 33%;
   padding-right: 20px; }
 
 .footerLogo {
@@ -445,9 +441,6 @@ ul, li {
 
 .footerP {
   padding-top: 20px; }
-
-.footerCenter {
-  max-width: 33%; }
 
 .titleFooter {
   color: white;
@@ -468,9 +461,6 @@ ul, li {
 
 .phoneItem {
   padding-right: 10px; }
-
-.footerRight {
-  max-width: 33%; }
 
 .footerForm {
   display: flex;
@@ -518,7 +508,8 @@ ul, li {
   padding-top: 65px; }
 
 .copyright__left {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .titleCopyright {
   font-size: 14px;
@@ -586,6 +577,10 @@ ul, li {
     display: block;
     margin: 0 auto; } }
 
+@media screen and (max-width: 650px) {
+  .titleCopyright {
+    padding-right: 15px; } }
+
 @media screen and (max-width: 540px) {
   .container {
     padding-bottom: 15px; }
@@ -634,6 +629,15 @@ ul, li {
     margin: 0 5px; }
   .siteSectionTestimonials .sliderDotted .sliderDotted__item-active {
     margin: 0 5px; } }
+
+@media screen and (max-width: 400px) {
+  .contactLeft {
+    width: 49%; }
+  .contactRight {
+    width: 49%; }
+  .imgContactItem {
+    width: 80%;
+    height: auto; } }
 
 /*form input */
 /*title */
