@@ -29,8 +29,7 @@ ul, li {
   /*height: 100%;*/
   height: auto;
   padding: 70px 10px;
-  margin: 0 auto;
-  border: 1px solid yellow; }
+  margin: 0 auto; }
 
 .container-header {
   padding-top: 15px; }
@@ -295,13 +294,17 @@ ul, li {
 
 .teamItemText_size {
   font-size: 13px;
-  color: white; }
+  color: #fafafa; }
 
 .team__bottom {
   padding-top: 70px;
   text-align: center; }
   .team__bottom p {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    color: #f3f3f3; }
+
+.buttonTeam {
+  width: 140px; }
 
 .works__top {
   max-width: 960px;
@@ -320,28 +323,22 @@ ul, li {
 .works__center {
   max-width: 1650px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  border: 1px solid red; }
-  .works__center .works__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch; }
-    .works__center .works__items .works__item {
-      max-width: 16vw;
-      height: auto;
-      min-width: 220px; }
-      .works__center .works__items .works__item .workImg {
-        width: 100%;
-        height: 100%; }
-
-.button-works {
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto; }
 
-.buttonTeam {
-  width: 140px; }
+.works__item {
+  max-width: 16vw;
+  height: auto;
+  min-width: 220px; }
+  .works__item .workImg {
+    width: 100%;
+    height: 100%; }
+
+.container {
+  text-align: center; }
+  .container .button-works {
+    margin: 0 auto; }
 
 .siteSectionTestimonials .mainTitle {
   margin-top: 0;
@@ -438,8 +435,9 @@ ul, li {
   width: 135px;
   height: auto; }
 
-.footerP {
-  padding-top: 20px; }
+.footer__left p {
+  padding-top: 20px;
+  font-size: 14px; }
 
 .footer__center {
   max-width: 33%; }
@@ -458,11 +456,17 @@ ul, li {
   padding-right: 10px;
   /*padding-bottom: 10px;*/ }
 
+.addressItem p {
+  font-size: 14px; }
+
 .phoneItems {
   display: flex; }
 
 .phoneItem {
   padding-right: 10px; }
+
+.phoneItem p {
+  font-size: 14px; }
 
 .footer__right {
   max-width: 33%; }
