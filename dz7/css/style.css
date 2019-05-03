@@ -330,14 +330,14 @@ ul, li {
 .works__item {
   max-width: 16vw;
   height: auto;
-  min-width: 220px; }
+  min-width: 280px; }
   .works__item .workImg {
     width: 100%;
     height: 100%; }
 
-.container {
+.container-works {
   text-align: center; }
-  .container .button-works {
+  .container-works .button-works {
     margin: 0 auto; }
 
 .siteSectionTestimonials .mainTitle {
@@ -638,7 +638,7 @@ ul, li {
     width: 49%; }
   .contact__right {
     width: 49%; }
-  .imgContactItem {
+  .contact__item img {
     width: 80%;
     height: auto; } }
 
