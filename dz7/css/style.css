@@ -294,7 +294,8 @@ ul, li {
 
 .teamItemText_size {
   font-size: 13px;
-  color: #fafafa; }
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.76); }
 
 .team__bottom {
   padding-top: 70px;
@@ -594,12 +595,14 @@ ul, li {
   .container {
     padding-bottom: 15px; }
   .mainHeader {
+    flex-direction: column; }
+  .mainHeader-row {
     flex-direction: row; }
   .mainNav {
     display: none; }
   .wrapper {
     margin: 100px auto;
-    width: 100%;
+    width: 90%;
     position: relative;
     color: white;
     text-align: center;
@@ -652,6 +655,14 @@ ul, li {
   #check-menu:checked ~ .main-menu {
     max-height: 500px;
     font-size: 16px; }
+  #check-menu:checked ~ .first {
+    display: none; }
+  #check-menu:checked ~ .second {
+    transform: rotate(45deg); }
+  #check-menu:checked ~ .third {
+    transform: rotate(-45deg); }
+  #check-menu:checked ~ .fourth {
+    display: none; }
   /**/
   /**/
   /**/
