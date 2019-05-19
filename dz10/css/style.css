@@ -32,12 +32,12 @@ body {
   background-color: #0097f4;
   color: white; }
 
+.button-active:hover {
+  background-color: #096ff4; }
+
 .button-current {
   background: none;
   color: #65a5e9; }
-
-.button-active:hover {
-  background-color: #096ff4; }
 
 .button-current:hover {
   background-color: #dadada; }
@@ -154,8 +154,9 @@ body {
     height: 30px; }
   .service .deleteItem {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
     width: 225px;
     height: 120px;
     background-color: #eeeeee;
@@ -168,7 +169,8 @@ body {
   .service .edit {
     position: absolute;
     top: 40px;
-    left: 40px;
+    left: 20px;
+    z-index: 1;
     width: 330px;
     height: 230px;
     display: flex;
