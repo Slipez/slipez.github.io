@@ -20,7 +20,7 @@ body {
   width: 620px;
   height: 30px;
   border: none;
-  border-bottom: 1px solid grey; }
+  border-bottom: 2px solid lightgrey; }
 
 .button {
   width: 110px;
@@ -70,6 +70,10 @@ body {
   .center__items-top .number .fas {
     font-size: 24px;
     margin: -8px 0; }
+
+.center__items-top .tasks {
+  background-color: transparent;
+  border-bottom: 1px solid grey; }
 
 .center__items-top .filters {
   text-align: center;
@@ -141,7 +145,7 @@ body {
     background-color: #0097f4; }
 
 .separator {
-  border-left: 1px solid grey; }
+  border-left: 2px solid lightgrey; }
 
 .service {
   position: relative;
