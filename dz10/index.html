@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Тудушка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<p id="demo"></p>
     <div class="top">
         <div class="top__items">
             <h3 class="title">Todo list</h3>
+            <div class="clear">
+                <i class="fas fa-sync-alt"></i>
+            </div>
             <form action="#" class="top__form">
-                <label for="task">
-                    <input type="text" name="task" id="task" placeholder="task" class="taskForm">
+                <label for="input">
+                    <input type="text" name="task" id="input" placeholder="task" class="taskForm">
                 </label>
-                <input type="submit" value="ADD" class="button button-active">
+                <button type="submit" value="ADD" id="add" class="button button-active">
+                    Add
+                </button>
             </form>
         </div>
     </div>
@@ -24,125 +30,126 @@
         <div class="center__items center__items-top">
             <div class="dateTime"><i class="fas fa-caret-up"></i><i class="fas fa-caret-down"></i></div>
             <div class="number"><i class="fas fa-caret-up"></i>123<i class="fas fa-caret-down"></i></div>
-            <div class="scrolling"></div>
-            <div class="tasks"><i class="fas fa-search"></i></div>
+            <div class="scrolling"><i class="fas fa-search"></i></div>
+            <div class="tasks">
+                <label for="search">
+                    <input type="text" name="search" id="search" placeholder="" class="search">
+                </label>
+            </div>
             <div class="filters"><i class="fas fa-filter"></i></div>
             <div class="separator"></div>
-            <div class="service"></div>
         </div>
-        <!-- /.center__items -->
-        <div class="center__items">
-            <div class="dateTime">
-                <div class="date">12.10.2018</div>
-                <div class="time">13:24</div>
-            </div>
-            <div class="number">1</div>
-            <div class="scrolling">
-                <p><i class="fas fa-angle-up"></i></p>
-                <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="tasks">Task for create user page</div>
-            <div class="filters">
-                <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>
-                <div class="filters__center"><i class="fas fa-check"></i></div>
-                <div class="filters__right"><i class="fas fa-trash-alt"></i></div>
-            </div>
-            <div class="separator"></div>
-            <div class="service">
-                <div class="deleteItem">
-                    <p>Delete item?</p>
-                    <button class="button button-current">No</button>
-                    <button class="button button-active">Yes</button>
-                </div>
-            </div>
-        </div>
+        <!-- /.center__items center__items-top -->
+        <ul id="list">
+<!--            <li class="center__items">-->
+<!--                <div class="dateTime">-->
+<!--                    <div class="date">12.3.2018</div>-->
+<!--                    <div class="time">13:24</div>-->
+<!--                </div>-->
+<!--                <div class="number">1</div>-->
+<!--                <div class="scrolling">-->
+<!--                    <p><i class="fas fa-angle-up"></i></p>-->
+<!--                    <i class="fas fa-angle-down"></i>-->
+<!--                </div>-->
+<!--                <div class="tasks">Task for create user page</div>-->
+<!--                <div class="filters">-->
+<!--                    <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>-->
+<!--                    <div class="filters__center"><i class="fas fa-check" title="complete"></i></div>-->
+<!--                    <div class="filters__right"><i class="fas fa-trash-alt" title="delete" ></i></div>-->
+<!--                </div>-->
+<!--                <div class="separator"></div>-->
+<!--            </li>-->
+<!--            &lt;!&ndash; /.center__items &ndash;&gt;-->
+<!--            <li class="center__items">-->
+<!--                <div class="dateTime">-->
+<!--                    <div class="date">12.10.2018</div>-->
+<!--                    <div class="time">13:24</div>-->
+<!--                </div>-->
+<!--                <div class="number">1</div>-->
+<!--                <div class="scrolling">-->
+<!--                    <p><i class="fas fa-angle-up"></i></p>-->
+<!--                    <i class="fas fa-angle-down"></i>-->
+<!--                </div>-->
+<!--                <div class="tasks tasks-bgColor">Task for create user page</div>-->
+<!--                <div class="filters">-->
+<!--                    <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>-->
+<!--                    <div class="filters__center filters__center-bgColor"><i class="fas fa-check"></i></div>-->
+<!--                    <div class="filters__right"><i class="fas fa-trash-alt"></i></div>-->
+<!--                </div>-->
+<!--                <div class="separator"></div>-->
+<!--            </li>-->
+<!--            &lt;!&ndash; /.center__items &ndash;&gt;-->
+<!--            <li class="center__items">-->
+<!--                <div class="dateTime">-->
+<!--                    <div class="date">12.10.2018</div>-->
+<!--                    <div class="time">13:24</div>-->
+<!--                </div>-->
+<!--                <div class="number">4</div>-->
+<!--                <div class="scrolling">-->
+<!--                    <p><i class="fas fa-angle-up"></i></p>-->
+<!--                    <i class="fas fa-angle-down"></i>-->
+<!--                </div>-->
+<!--                <div class="tasks tasks-bgColor">Task for create user page</div>-->
+<!--                <div class="filters">-->
+<!--                    <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>-->
+<!--                    <div class="filters__center filters__center-bgColor"><i class="fas fa-check"></i></div>-->
+<!--                    <div class="filters__right"><i class="fas fa-trash-alt"></i></div>-->
+<!--                </div>-->
+<!--                <div class="separator"></div>-->
+<!--            </li>-->
+<!--            &lt;!&ndash; /.center__items &ndash;&gt;-->
+<!--            <li class="center__items">-->
+<!--                <div class="dateTime">-->
+<!--                    <div class="date">12.10.2018</div>-->
+<!--                    <div class="time">13:24</div>-->
+<!--                </div>-->
+<!--                <div class="number">5</div>-->
+<!--                <div class="scrolling">-->
+<!--                    <p><i class="fas fa-angle-up"></i></p>-->
+<!--                    <i class="fas fa-angle-down"></i>-->
+<!--                </div>-->
+<!--                <div class="tasks">-->
+<!--                    Create todo list for example. Create todo list for example. Create todo list for example.-->
+<!--                    Create todo list for example. Create todo list for example. Create todo list for example.-->
+<!--                    Create todo list for example. Create todo list for example. Create todo list for example.-->
+<!--                    Create todo list for example. Create todo list for example. Create todo list for example.-->
+<!--                    Create todo list for example. Create todo list for example. Create todo list for example.-->
+<!--                </div>-->
+<!--                <div class="filters">-->
+<!--                    <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>-->
+<!--                    <div class="filters__center"><i class="fas fa-check"></i></div>-->
+<!--                    <div class="filters__right" id="hider"><i class="fas fa-trash-alt"></i></div>-->
+<!--                </div>-->
+<!--                <div class="separator"></div>-->
 
-        <!-- /.center__items -->
-        <div class="center__items">
-            <div class="dateTime">
-                <div class="date">12.10.2018</div>
-                <div class="time">13:24</div>
-            </div>
-            <div class="number">1</div>
-            <div class="scrolling">
-                <p><i class="fas fa-angle-up"></i></p>
-                <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="tasks tasks-bgColor">Task for create user page</div>
-            <div class="filters">
-                <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>
-                <div class="filters__center filters__center-bgColor"><i class="fas fa-check"></i></div>
-                <div class="filters__right"><i class="fas fa-trash-alt"></i></div>
-            </div>
-            <div class="separator"></div>
-            <div class="service">
-            </div>
-        </div>
-
-        <!-- /.center__items -->
-        <div class="center__items">
-            <div class="dateTime">
-                <div class="date">12.10.2018</div>
-                <div class="time">13:24</div>
-            </div>
-            <div class="number">4</div>
-            <div class="scrolling">
-                <p><i class="fas fa-angle-up"></i></p>
-                <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="tasks tasks-bgColor">Task for create user page</div>
-            <div class="filters">
-                <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>
-                <div class="filters__center filters__center-bgColor"><i class="fas fa-check"></i></div>
-                <div class="filters__right"><i class="fas fa-trash-alt"></i></div>
-            </div>
-            <div class="separator"></div>
-            <div class="service">
-                <div class="edit">
-                    <p>Edit text</p>
-                    <label id="edit">
-                        <input type="text" name="edit" placeholder="New text of todo item..." >
-                    </label>
-                    <div class="buttons">
-                        <button class="button button-current">Cancel</button>
-                        <button class="button button-active">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- /.center__items -->
-        <div class="center__items">
-            <div class="dateTime">
-                <div class="date">12.10.2018</div>
-                <div class="time">13:24</div>
-            </div>
-            <div class="number">5</div>
-            <div class="scrolling">
-                <p><i class="fas fa-angle-up"></i></p>
-                <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="tasks">
-                Create todo list for example. Create todo list for example. Create todo list for example.
-                Create todo list for example. Create todo list for example. Create todo list for example.
-                Create todo list for example. Create todo list for example. Create todo list for example.
-                Create todo list for example. Create todo list for example. Create todo list for example.
-                Create todo list for example. Create todo list for example. Create todo list for example.
-            </div>
-            <div class="filters">
-                <div class="filters__left"><i class="fas fa-pencil-alt"></i></div>
-                <div class="filters__center"><i class="fas fa-check"></i></div>
-                <div class="filters__right"><i class="fas fa-trash-alt"></i></div>
-            </div>
-            <div class="separator"></div>
-            <div class="service">
-            </div>
-        </div>
-
-        <!-- /.center__items -->
+<!--            </li>-->
+            <!-- /.center__items -->
+        </ul>
+        <!-- /.center__items task -->
     </div>
     <!-- /.center -->
+    <div class="service">
+        <div class="deleteItem display-none" id="delete">
+            <p>Delete item?</p>
+            <button class="button button-current" onclick="closePopupDelete()">No</button>
+            <button class="button button-active" onclick="removeToDo()">Yes</button>
+        </div>
+        <div class="edit display-none" id="edit">
+            <p>Edit text</p>
+            <label>
+                <input type="text" name="edit" placeholder="New text of todo item..." >
+            </label>
+            <div class="buttons">
+                <button class="button button-current" onclick="closePopupEdit()">Cancel</button>
+                <button class="button button-active" onclick="editToDo()">Save</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.service -->
 
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<!--gulp sass:watch-->
+<!--npm run format-->
