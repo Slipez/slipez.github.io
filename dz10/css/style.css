@@ -187,6 +187,9 @@ body {
   border-radius: 50%;
   background-color: #0097f4; }
 
+.display-none {
+  display: none; }
+
 .service {
   position: absolute;
   width: 340px;
