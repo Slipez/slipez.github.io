@@ -106,7 +106,7 @@ body {
 .dateTime {
   text-align: center;
   min-width: 110px;
-  margin: 10px; }
+  margin: auto 10px; }
 
 .date {
   font-size: 15px;
@@ -121,7 +121,7 @@ body {
   background-color: #717171;
   color: white;
   padding: 8px 0;
-  margin: 10px;
+  margin: auto 10px;
   text-align: center;
   font-size: 15px; }
 
