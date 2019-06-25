@@ -188,7 +188,7 @@ function closePopupEdit() {
 
 // complete to do, выполнено
 function completeToDo(element) {
-  element.classList.toggle(CHECK);
+  element.parentElement.classList.toggle(CHECK);
   // element.classList.toggle(UNCHECK);
   const textElement =
     element.parentElement.parentElement.previousElementSibling;

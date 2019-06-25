@@ -159,13 +159,14 @@ body {
   .filters .filters__center {
     border-radius: 50%;
     background-color: #0097f4; }
-  .filters .filters__center-bgColor {
-    border-radius: 50%;
-    background-color: #82f6fb;
-    color: black; }
   .filters .filters__right {
     border-radius: 50%;
     background-color: #0097f4; }
+
+.filters .filters__center-bgColor {
+  border-radius: 50%;
+  background-color: #82f6fb;
+  color: black; }
 
 .fas {
   padding: 7px; }
@@ -175,13 +176,10 @@ body {
   background-color: #3f8c3f; }
 
 .fa-check {
-  border-radius: 50%;
-  background-color: #0097f4; }
+  border-radius: 50%; }
 
 .fa-check-bgColor {
-  border-radius: 50%;
-  background-color: #82f6fb;
-  color: black; }
+  border-radius: 50%; }
 
 .fa-trash-alt {
   border-radius: 50%;
