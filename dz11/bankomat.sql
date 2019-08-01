@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 31 2019 г., 19:51
+-- Время создания: Авг 01 2019 г., 14:49
 -- Версия сервера: 10.3.13-MariaDB
 -- Версия PHP: 7.1.22
 
@@ -116,8 +116,8 @@ CREATE TABLE `currencies` (
 
 INSERT INTO `currencies` (`id`, `sign`, `name`) VALUES
 (1, '$', 'dollar'),
-(2, 'UAH', 'grivna'),
-(3, 'EUR', 'euro');
+(3, 'EUR', 'euro'),
+(2, 'UAH', 'grivna');
 
 -- --------------------------------------------------------
 
@@ -180,7 +180,7 @@ INSERT INTO `users` (`id`, `name`, `age`) VALUES
 ALTER TABLE `accounts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`),
-  ADD KEY `user_id` (`user_id`),
+  ADD UNIQUE KEY `user_id` (`user_id`,`currency_id`),
   ADD KEY `currency_id` (`currency_id`);
 
 --
@@ -189,6 +189,7 @@ ALTER TABLE `accounts`
 ALTER TABLE `amounts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`),
+  ADD UNIQUE KEY `cashbox_id_2` (`cashbox_id`,`value`),
   ADD KEY `cashbox_id` (`cashbox_id`);
 
 --
@@ -204,7 +205,8 @@ ALTER TABLE `cashboxes`
 --
 ALTER TABLE `currencies`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id` (`id`);
+  ADD UNIQUE KEY `id` (`id`),
+  ADD UNIQUE KEY `sign` (`sign`,`name`);
 
 --
 -- Индексы таблицы `logs`
@@ -220,7 +222,8 @@ ALTER TABLE `logs`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id` (`id`);
+  ADD UNIQUE KEY `id` (`id`),
+  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
