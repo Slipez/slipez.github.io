@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    padding: 0px;
+    padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -20,6 +20,7 @@ body {
 }
 .top a {
     text-decoration: none;
+    color: #6f7173;
 }
 .top__left {
     /*display: flex;*/
@@ -106,6 +107,12 @@ li {
 .product__right {}
 .product__right p {
     padding: 10px 30px;
+}
+.hr {
+    margin: 30px 0 30px;
+    border: 1px solid #6f7173;
+    /*border: 1px solid red;*/
+    /*background-color: rgba(111, 113, 115, 0.48);*/
 }
 .footer {
     text-align: center;
