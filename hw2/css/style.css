@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0 30px;
+    padding: 0 30px;
+    color: #6f7173;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 0 30px;
+    /*border: 1px solid red;*/
+}
+.top a {
+    text-decoration: none;
+    color: #6f7173;
+}
+.top i {
+    /*border: 1px solid red;*/
+}
+.top__left {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-grow: 1;*/
+}
+.top__right {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-grow: 2;*/
+    /*border: 1px solid green;*/
+}
+.menu {
+     display: flex;
+}
+.menu__item {
+    list-style-type: none; /* Убираем маркеры */
+    padding: 15px 20px;
+}
+.menu__item-activ {
+    border-bottom: 2px solid #5f8ecc;
+}
+li {
+}
+.menu-mini {
+    display: none;
+}
+.banner {
+    background: url(../img/back_banner.png) no-repeat center top / cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 15px 0 15px;
+    /*margin: 30px 0 0;*/
+    /*border: 1px solid red;*/
+}
+.banner h2 {
+    padding-bottom: 20px;
+}
+.banner p {
+    padding-bottom: 10px;
+}
+.sign {
+    height: 30px;
+    width: 150px;
+    background: #5f8ecc;
+    padding: 5px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /*padding-top: 30px;*/
+    padding: 30px 15px 0 15px;
+    /*margin: 0 auto;*/
+    /*border: 1px solid red;*/
+}
+.main h4 {
+    color: #73a9f5;
+    /*padding-top: 30px;*/
+    /*padding-bottom: 20px;*/
+    padding: 30px 0 20px 0;
+    /*border: 1px solid red;*/
+}
+.main__items {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+}
+.product {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    padding-top: 30px;
+    /*border: 1px solid red;*/
+}
+.product h2 {
+    padding: 30px 30px;
+}
+.product h3 {
+    padding: 15px 0 15px 30px;
+}
+.product__item {
+    display: flex;
+    /*weight: 40%;*/
+    /*justify-content: space-between;*/
+    justify-content: space-around;
+    /*justify-content: center;*/
+    /*border: 1px solid red;*/
+
+}
+.product__left {
+    /*border: 1px solid red;*/
+}
+.product__right {
+    /*border: 1px solid blue;*/
+}
+.product__right p {
+    padding: 10px 30px;
+}
+.hr {
+    margin: 30px 0 30px;
+    border: 1px solid #6f7173;
+    /*border: 1px solid red;*/
+    /*background-color: rgba(111, 113, 115, 0.48);*/
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+}
+@media screen and (max-width: 720px) {
+    .control {
+        display: none;
+    }
+    .iphone {
+        width: 70%;
+        height: 70%;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main__items {
+        display: flex;
+        border-bottom: 1px solid #6f7173;
+        /*margin: 10px;*/
+        padding: 15px 0;
+        /*flex-direction: row;*/
+        /*flex-wrap: nowrap;*/
+     }
+    .menu {
+        display: none;
+    }
+    .menu-mini {
+        display: flex;
+        background: #5f8ecc;
+        color: white;
+        padding: 5px 10px;
+        margin-top: 15px;
+        /*align-items: center;*/
+        /*border: 1px solid red;*/
+    }
+    .product__item {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner {
+        flex-direction: column;
+    }
+    .sign {
+        margin-bottom: 15px;
+    }
+    .main__items {
+        flex-direction: column;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}
