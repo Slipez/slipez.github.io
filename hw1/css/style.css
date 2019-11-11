@@ -22,6 +22,9 @@ body {
     text-decoration: none;
     color: #6f7173;
 }
+.top i {
+    /*border: 1px solid red;*/
+}
 .top__left {
     /*display: flex;*/
     /*justify-content: space-between;*/
@@ -45,13 +48,17 @@ body {
 }
 li {
 }
+.menu-mini {
+    display: none;
+}
 .banner {
     background: url(../img/back_banner.png) no-repeat center top / cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 0 15px;
+    padding: 20px 15px 0 15px;
+    /*margin: 30px 0 0;*/
     /*border: 1px solid red;*/
 }
 .banner h2 {
@@ -85,6 +92,10 @@ li {
     /*padding-bottom: 20px;*/
     padding: 30px 0 20px 0;
     /*border: 1px solid red;*/
+}
+.main__items {
+    /*display: flex;*/
+    /*flex-direction: row;*/
 }
 .product {
     /*display: flex;*/
@@ -126,10 +137,54 @@ li {
     text-align: center;
     padding: 30px;
 }
+@media screen and (max-width: 720px) {
+    .control {
+        display: none;
+    }
+    .iphone {
+        width: 70%;
+        height: 70%;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main__items {
+        display: flex;
+        border-bottom: 1px solid #6f7173;
+        /*margin: 10px;*/
+        padding: 15px 0;
+        /*flex-direction: row;*/
+        /*flex-wrap: nowrap;*/
+     }
+    .menu {
+        display: none;
+    }
+    .menu-mini {
+        display: flex;
+        background: #5f8ecc;
+        color: white;
+        padding: 5px 10px;
+        margin-top: 15px;
+        /*align-items: center;*/
+        /*border: 1px solid red;*/
+    }
+    .product__item {
+        flex-direction: column;
+    }
+}
 
-/*@media screen and (max-width: 320px) {*/
-    /*.main div{*/
-        /*flex-direction: column;*/
-        /*flex-wrap: wrap;*/
-    /*}*/
-/*}*/
+@media screen and (max-width: 500px) {
+    .banner {
+        flex-direction: column;
+    }
+    .sign {
+        margin-bottom: 15px;
+    }
+    .main__items {
+        flex-direction: column;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}
