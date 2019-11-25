@@ -9,10 +9,12 @@ body {
 }
 .items {
     display: flex;
+    /*flex-wrap: wrap;*/
     justify-content: center;
     margin: 30px;
     color: #3a4d5c;
     /*background: #efefef;*/
+    /*border: 1px solid blue;*/
 }
 .itemsLeft {
     /*display: flex;*/
@@ -21,6 +23,8 @@ body {
     width: 465px;
     height: 610px;
     position: relative;
+    /*border: 1px solid red;*/
+
 }
 .itemsLeft__logo {
     margin-top: 25px;
@@ -28,24 +32,51 @@ body {
 }
 .shadow {
     position: absolute;
-    left: -110px;
-    bottom: -80px;
+    left: -10px;
+    top: 350px;
+    width: 100%;
     /*z-index: auto;*/
 }
 .itemsLeft__camera {
     /*position: absolute;*/
     /*left: -40px;*/
     /*top: 80px;*/
+    width: 100%;
     margin: 30px 0 0 -55px;
     /*z-index: 100;*/
 }
+.itemsLeft__logo .shadow .itemsLeft__camera img {
+    /*max-width: 90%;*/
+    /*width: 200px;*/
+    /*height: auto;*/
+}
+.itemMidle {
+    position: absolute;
+    right: -55px;
+    top: 150px;
+    /*border: 1px solid red;*/
+}
+.midle {
+    background: rgba(255, 255, 255, 0.51);
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.midle img {
+    margin-top: 10px;
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*object-fit: cover;*/
+}
 .itemsRight {
     background: white;
-    width: 545px;
-    height: 700px;
+    /*width: 545px;*/
+    /*height: 700px;*/
     padding: 70px 0 0 80px;
-    position: relative;
     text-transform: uppercase;
+    /*border: 1px solid green;*/
 }
 .itemsRight h2 {
     margin-top: 15px;
@@ -55,6 +86,7 @@ body {
 }
 .features {
     text-transform: none;
+    /*border: 1px solid red;*/
 }
 .features li {
     padding-top: 10px;
@@ -70,6 +102,7 @@ body {
     list-style: none;
     margin: 40px 0 0;
     /*text-transform: uppercase;*/
+    /*border: 1px solid red;*/
 }
 .stock a {
     text-decoration: none;
@@ -83,10 +116,11 @@ body {
 .quantityTop {
     margin-top: 25px;
 }
-.quantity__items {
+.quantity {
     display: flex;
     /*margin-top: 20px;*/
     text-transform: uppercase;
+    /*border: 1px solid red;*/
 }
 .quantity__item {
     width: 40px;
@@ -102,6 +136,7 @@ body {
     display: flex;
     margin-top: 25px;
     align-items: flex-end;
+    /*border: 1px solid red;*/
 }
 .priceNew {
     text-transform: none;
@@ -135,7 +170,7 @@ body {
     text-transform: none;
 }
 .button__right {
-    margin-left: 15px;
+    margin: 0 80px 70px 15px;
     border: 1px solid grey;
     width: 200px;
     height: 50px;
@@ -144,21 +179,7 @@ body {
     align-items: center;
     text-transform: none;
 }
-.itemMidle {
-    position: absolute;
-    left: -55px;
-    top: 205px;
-}
-.midle {
-    background: rgba(255, 255, 255, 0.51);
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.midle img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
+
 .button__left:hover {
     border: 1px solid grey;
     cursor: pointer;
@@ -167,6 +188,7 @@ body {
     border: 1px solid #37b0ae;
     cursor: pointer;
 }
+
 @media screen and (max-width: 950px) {
     .items {
         flex-direction: column;
@@ -183,22 +205,68 @@ body {
         display: block;
     }
     .shadow {
-        left: -30px;
-        top: 220px;
-        margin: 20px;
+        left: 90px;
+        top: 350px;
+        /*margin: 20px;*/
+        width: 80%;
     }
     .itemsLeft__camera {
         margin: 10px 0 0 70px;
+        width: 80%;
+    }
+    .shadow .itemsLeft__camera img {
+        /*max-width: 100%;*/
+        /*height: auto;*/
     }
     .itemMidle {
-        left: 120px;
-        top: -160px;
+        left: 0;
+        top: 600px;
+        right: 0;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
         /*border: 1px solid red;*/
-
     }
     .midle {
         margin: 10px;
+    }
+    .itemsRight {
+        width: 625px;
+        height: auto;
+        padding: 50px 0;
+    }
+    .button__right {
+        margin: 0 30px 30px 15px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .itemsLeft {
+        width: 100%;
+        /*height: calc(auto+200px);*/
+    }
+    .shadow {
+        top: 300px;
+    }
+    .itemsLeft__camera {
+        margin: 10px;
+    }
+    .itemMidle {
+        top: 600px;
+    }
+    .midle {
+        margin: 5px;
+    }
+    .itemsRight {
+        width: 100%;
+        padding: 0 ;
+        /*margin: 20px;*/
+    }
+}
+@media screen and (max-width: 450px) {
+    .itemsLeft {
+        height: 550px;
+    }
+    .itemMidle {
+        top: 420px;
     }
 }
